@@ -17,6 +17,16 @@ const yayilmaRange = document.getElementById("yayilma-range");
 const yayilmaInput = document.getElementById("yayilma-input");
 const button = document.getElementById("btn");
 const textInput = document.getElementById("code-txt");
+const color = document.getElementById("color-palette");
+const colorInput = document.getElementById("color-input");
+
+color.addEventListener("input", renkYaz);
+function renkYaz() {
+  const colorVal = color.value;
+  colorInput.value = colorVal;
+  kutuyaUygula();
+}
+renkYaz();
 
 button.addEventListener("click", pencere);
 function pencere() {
@@ -80,7 +90,8 @@ function kutuyaUygula() {
   const bul = bulaniklikInput.value;
   const yay = yayilmaInput.value;
   const code = textInput.value;
-  const birlestir = `${ysha}px ${dsha}px ${bul}px ${yay}px rgba(0,0,0,0.1) `;
+  const renk = colorInput.value;
+  const birlestir = `${ysha}px ${dsha}px ${bul}px ${yay}px ${renk} `;
 
   //   console.log(birlestir);
   kare.style.boxShadow = birlestir;

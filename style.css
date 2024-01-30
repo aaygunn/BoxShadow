@@ -21,6 +21,7 @@ body {
   background-color: #ffeaa7;
   width: 100%;
   border-bottom: 2px solid #d1d5db;
+  z-index: 100;
 }
 
 .logo {
@@ -72,6 +73,7 @@ body {
   justify-content: space-between;
   margin-top: 20px;
   gap: 30px;
+  z-index: 2;
 }
 
 .ortak-konum {
@@ -129,4 +131,20 @@ body {
 /* -------------------ASIDE RIGHT START--------------------- */
 .aside-right {
   width: 24%;
+  z-index: 2;
+}
+.color {
+  margin-top: 20px;
+  height: 90px;
+  width: 200px;
+}
+#color-input {
+  width: 100px;
+}
+.desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #ffeaa7;
 }
