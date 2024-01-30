@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+}
+/* -------------------HEADER START--------------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #ffeaa7;
+  width: 100%;
+  border-bottom: 2px solid #d1d5db;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.code-text {
+  width: 450px;
+  height: 40px;
+  margin-right: -450px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: darkslategrey;
+  display: none;
+  letter-spacing: 1px;
+}
+.button input:hover {
+  background-color: #ffbb64;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  margin-right: 40px;
+  background-color: #ff6868;
+  color: #f3f3f3;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* -------------------SHADOW SIDE START--------------------- */
+
+.shadow {
+  width: 25%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.ortak-konum {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.ortak-bas {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.range {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.px {
+  width: 50px;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+  margin-left: 10%;
+  margin-right: 10px;
+  text-align: center;
+}
+.baslik {
+  width: 60%;
+}
+
+/* -------------------HERO START--------------------- */
+
+.hero {
+  width: 50%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+}
+.kare {
+  width: 20rem;
+  height: 20rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+
+  /* border-radius: 2rem; */
+}
+/* -------------------ASIDE RIGHT START--------------------- */
+.aside-right {
+  width: 24%;
+}

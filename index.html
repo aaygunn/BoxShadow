@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- -----------------------HEADER START------------------ -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Box Shadow</div>
+        <input type="text" class="code-text" id="code-txt" />
+        <div class="button"><input id="btn" type="button" value="Code" /></div>
+      </nav>
+    </header>
+    <!-- -----------------------SHADOW SIDE START-------------------- -->
+    <div class="container">
+      <aside class="shadow">
+        <div class="yatay_konum ortak-konum">
+          <div class="yatay_konum-bas ortak-bas">
+            <span class="baslik">Yatay Konum</span>
+            <input
+              class="px"
+              id="yatay-shadow-input"
+              value="0"
+              type="text"
+            /><span>px</span>
+          </div>
+          <input
+            class="range"
+            id="yatay-shadow-range"
+            type="range"
+            max="100"
+            min="-100"
+          />
+        </div>
+        <div class="dikey_konum ortak-konum">
+          <div class="dikey_konum-bas ortak-bas">
+            <span class="baslik">Dikey Konum</span>
+            <input
+              class="px"
+              id="dikey-shadow-input"
+              value="0"
+              type="text"
+            /><span>px</span>
+          </div>
+          <input
+            class="range"
+            id="dikey-shadow-range"
+            type="range"
+            max="100"
+            value="0"
+            min="-100"
+          />
+        </div>
+        <div class="bulaniklik ortak-konum">
+          <div class="bulaniklik-bas ortak-bas">
+            <span class="baslik">Bulanıklık</span>
+            <input
+              class="px"
+              id="bulaniklik-input"
+              value="50"
+              type="text"
+            /><span>px</span>
+          </div>
+          <input
+            class="range"
+            id="bulaniklik-range"
+            type="range"
+            max="100"
+            min="-100"
+          />
+        </div>
+        <div class="yayilma ortak-konum">
+          <div class="yayilma-bas ortak-bas">
+            <span class="baslik">Yayılma</span>
+            <input class="px" id="yayilma-input" value="0" type="text" /><span
+              >px</span
+            >
+          </div>
+          <input
+            class="range"
+            id="yayilma-range"
+            type="range"
+            max="100"
+            min="-100"
+          />
+        </div>
+      </aside>
+      <!-- -----------------------HERO START-------------------- -->
+      <section class="hero">
+        <div class="kare" id="kare"></div>
+      </section>
+      <!-- -----------------------ASIDE RIGHT START----------------- -->
+      <aside class="aside-right shadow">
+        <div class="border-radius ortak-konum">
+          <div class="yatay_konum-bas ortak-bas">
+            <span class="baslik">Border Radius</span>
+            <input class="px" id="radius-input" type="text" value="10" /><span
+              >rem</span
+            >
+          </div>
+          <input
+            id="border-radius-range"
+            class="range"
+            type="range"
+            max="20"
+            min="0"
+            oninput="changeVal()"
+          />
+        </div>
+        <div class="height ortak-konum">
+          <div class="dikey_konum-bas ortak-bas">
+            <span class="baslik">Height</span>
+            <input id="height-input" class="px" value="20" type="text" /><span
+              >rem</span
+            >
+          </div>
+          <input
+            class="range"
+            type="range"
+            max="40"
+            min="0"
+            id="height-range"
+          />
+        </div>
+        <div class="width ortak-konum">
+          <div class="bulaniklik-bas ortak-bas">
+            <span class="baslik">Width</span>
+            <input class="px" value="20" type="text" id="width-input" /><span
+              >rem</span
+            >
+          </div>
+          <input class="range" id="width-range" type="range" max="40" min="0" />
+        </div>
+      </aside>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
