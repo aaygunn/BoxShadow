@@ -29,11 +29,12 @@ body {
   font-weight: 500;
   margin-left: 40px;
 }
-
+.navbar-right {
+  display: flex;
+}
 .code-text {
   width: 450px;
   height: 40px;
-  margin-right: -450px;
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -51,6 +52,19 @@ body {
 }
 
 .button input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  margin-right: 40px;
+  background-color: #ff6868;
+  color: #f3f3f3;
+  font-size: 16px;
+  font-weight: 500;
+}
+#copy-btn {
+  display: none;
   outline: none;
   border: none;
   padding: 10px;

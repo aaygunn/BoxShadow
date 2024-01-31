@@ -19,6 +19,7 @@ const button = document.getElementById("btn");
 const textInput = document.getElementById("code-txt");
 const color = document.getElementById("color-palette");
 const colorInput = document.getElementById("color-input");
+const copy = document.getElementById("copy-btn");
 
 color.addEventListener("input", renkYaz);
 function renkYaz() {
@@ -28,9 +29,20 @@ function renkYaz() {
 }
 renkYaz();
 
+copy.addEventListener("click", kopyala);
+function kopyala() {
+  textInput.select();
+  document.execCommand("copy");
+  copy.style.backgroundColor = "rgb(6, 204, 6)";
+  copy.value = "Kopyalandı!";
+  console.log(copy);
+}
+
 button.addEventListener("click", pencere);
 function pencere() {
   textInput.style.display = "block";
+  button.style.display = "none";
+  copy.style.display = "block";
 }
 
 //Border Radius
@@ -93,9 +105,9 @@ function kutuyaUygula() {
   const renk = colorInput.value;
   const birlestir = `${ysha}px ${dsha}px ${bul}px ${yay}px ${renk} `;
 
-  //   console.log(birlestir);
   kare.style.boxShadow = birlestir;
-
   textInput.value = "box-shadow:" + birlestir + ";";
-  console.log(textInput);
+  //   copy.style.display = "none";
+  //   textInput.style.display = "none";
+  //   button.style.display = "block";
 }
