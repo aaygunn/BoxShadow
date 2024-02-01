@@ -43,6 +43,7 @@ body {
   color: darkslategrey;
   display: none;
   letter-spacing: 1px;
+  font-family: inherit;
 }
 .button input:hover {
   background-color: #ffbb64;
