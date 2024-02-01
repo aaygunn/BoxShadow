@@ -4,7 +4,10 @@ Bu projem, benim gibi Css box-shadow özelliğini bir türlü istediği gibi aya
 Box-Shadow uygulamamda,  kutu boyutlarını,   gölge rengini, gölgenin yatay ve dikey konumunu, bulanıklığını, yayılma oranını ayarlayıp kodu göster butonuna basmanız yeterli. Sizin için box-shadow kodunu kopyalayacak. 
 
 Umarım benim işime yaradığı gibi sizlerinde işinize yarar. 
-Projemin demosuna:[buradan]( https://aaygunn.github.io/BoxShadow/) ulaşabilirsiniz. (Henüz responsive değil. Mobilden giren arkadaşların, browserinizin masaüstü sitesi seçeneğiyle girmesini tavsiye ederim).
+
+uProjemin demosuna:[buradan]( https://aaygunn.github.io/BoxShadow/) ulaşabilirsiniz.
+
+(Henüz responsive değil. Mobilden giren arkadaşların, browserinizin masaüstü sitesi seçeneğiyle girmesini tavsiye ederim).
 
 <h3>Kullanılan Teknolojiler</h3>
 
