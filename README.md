@@ -15,4 +15,4 @@ Projemin demosuna:[buradan]( https://aaygunn.github.io/BoxShadow/) ulaşabilirsi
 </ul>
 
 <h3>Ekran Görüntüsü</h3>
-![](box-shadow.png)
+<img src="box-shadow.png"/>
